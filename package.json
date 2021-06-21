@@ -1,0 +1,20 @@
+{
+  "name": "port-bot-api",
+  "version": "1.0.0",
+  "description": "API to process user input",
+  "main": "server.js",
+  "scripts": {
+    "debug": "nodemon --exec server.js --inspect",
+    "start": "nodemon --exec server.js"
+  },
+  "author": "Alexander Jacquelline",
+  "license": "MIT",
+  "dependencies": {
+    "@nlpjs/basic": "^4.16.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.14"
+  }
+}

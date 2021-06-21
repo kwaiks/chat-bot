@@ -1,0 +1,56 @@
+{
+    "name": "Corpus",
+    "locale": "en-US",
+    "data": [
+      {
+        "intent": "agent.name",
+        "utterances": [
+          "Who are you",
+          "What are you"
+        ],
+        "answers": [
+          "I'm Alexander Jacquelline.\nI work as Software Engineer",
+          "I'm Alex, a Software Engineer",
+          "Alex's Bot. He's working as Software Engineer"
+        ]
+      },
+      {
+        "intent": "agent.prog.lang",
+        "utterances": [
+          "What programming language did you understand?",
+          "Programming language?",
+          "Your speciality?"
+        ],
+        "answers": [
+          "I mainly focused on Javascript, but have some project using Flutter",
+          "Because HTML and CSS doesn't count, so Javascript, Dart and SQL"
+        ]
+      },
+      {
+        "intent": "agent.whereami",
+        "utterances": [
+          "where am i",
+          "where am i talking"
+        ],
+        "answers": [
+          { "answer": "you're talking from console, app is {{ app }} channel is {{ channel }}", "opts": "channel==='console'" },
+          { "answer": "you're talking from directline, app is {{ app }} channel is {{ channel }}", "opts": "channel==='directline'" },
+          { "answer": "you're talking from microsoft emulator, app is {{ app }} channel is {{ channel }}", "opts": "channel==='msbf-emulator'" },
+          { "answer": "I don't even know 🤣"}
+        ]
+      },
+      {
+        "intent": "None",
+        "utterances": [
+          "I need advice",
+          "I need some advice",
+          "can you give me some advice?",
+          "what should I do?"
+        ],
+        "answers": [
+          "Sorry, I don't understand",
+          "{{name}}"
+        ]
+      }
+    ]
+}
